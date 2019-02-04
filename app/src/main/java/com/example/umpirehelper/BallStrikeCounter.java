@@ -6,6 +6,7 @@ package com.example.umpirehelper;
 public class BallStrikeCounter {
     private int nBalls;
     private int nStrikes;
+    private int nOuts;
     private static final int BALLS_FOr_WALK=4;
     private static final int STRIKES_FOR_OUTS=3;
 
@@ -34,8 +35,15 @@ public class BallStrikeCounter {
      */
     public void callStrike() {
         nStrikes++;
-
         if (nStrikes>=STRIKES_FOR_OUTS) {
+            reset();
+        }
+    }
+
+    public void callOut() {
+        nOuts++;
+
+        if (nOuts >=3) {
             reset();
         }
     }
@@ -63,4 +71,6 @@ public class BallStrikeCounter {
     public int getnStrikes() {
         return nStrikes;
     }
+
+
 }

@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateView() {
         TextView ballsDisplay = findViewById(R.id.numBalls);
         TextView strikesDisplay= findViewById(R.id.numStrikes);
-        ballsDisplay.setText(String.format(Locale.US, "%s", bsc.getnBalls()));
+        ballsDisplay.setText(String.format(Locale.US, "%d", bsc.getnBalls()));
         strikesDisplay.setText(String.format(Locale.US, "%d", bsc.getnStrikes()));
     }
 

@@ -7,7 +7,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
     <TextView
+        android:layout_weight="1"
         android:id="@+id/numBallsLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,14 +22,21 @@
         />
 
     <TextView
+        android:layout_weight="1"
         android:id="@+id/numBalls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/default_output_label"
         android:textSize="@dimen/textview_font_size"
         />
+</LinearLayout>
 
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
+        android:layout_weight="1"
         android:id="@+id/numStrikesLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,13 +45,14 @@
         />
 
     <TextView
+        android:layout_weight="1"
         android:id="@+id/numStrikes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/default_output_label"
         android:textSize="@dimen/textview_font_size"
         />
-
+</LinearLayout>
     <Button
         android:id="@+id/balls_button"
         android:layout_width="match_parent"
