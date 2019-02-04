@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/numBallsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balls:"
+        android:textSize="@dimen/textview_font_size"
+        />
+
+    <TextView
+        android:id="@+id/numBalls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_output_label"
+        android:textSize="@dimen/textview_font_size"
+        />
+
+    <TextView
+        android:id="@+id/numStrikesLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Strikes"
+        android:textSize="@dimen/textview_font_size"
+        />
+
+    <TextView
+        android:id="@+id/numStrikes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_output_label"
+        android:textSize="@dimen/textview_font_size"
+        />
+
+    <Button
+        android:id="@+id/balls_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:textSize="@dimen/button_font_size"
+        android:text="@string/ball_button_label"
+        />
+    <Button
+        android:id="@+id/strikes_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strike_button_label"
+        android:textSize="@dimen/button_font_size"
+        android:onClick="buttonClick"
+
+        />
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_button_label"
+        android:textSize="@dimen/button_font_size"
+        android:onClick="buttonClick"
+
+        />
+
+</LinearLayout>
